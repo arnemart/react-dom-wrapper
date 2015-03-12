@@ -1,0 +1,21 @@
+{
+  "name": "react-dom-wrapper",
+  "version": "1.0.0",
+  "description": "A (somewhat) helpful wrapper function for creating React elements",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/arnemart/react-dom-wrapper.git"
+  },
+  "homepage": "https://github.com/arnemart/react-dom-wrapper",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "reactjs",
+    "dom"
+  ],
+  "author": "Arne Martin Aurlien",
+  "license": "MIT",
+  "dependencies": {
+    "react": "*"
+  }
+}
