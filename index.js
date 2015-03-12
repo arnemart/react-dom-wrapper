@@ -47,7 +47,7 @@ function DOM(tree) {
     if (isString(type)) {
         var parts;
 
-         // Split on dots and add class names
+        // Split on dots and add class names
         if (type.indexOf('.') > -1) {
             parts = type.split('.');
             type = parts[0];
@@ -81,3 +81,8 @@ function DOM(tree) {
 }
 
 module.exports = DOM;
+
+module.exports.setReact = function(react) {
+    React = react;
+    return DOM;
+};

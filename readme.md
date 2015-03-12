@@ -27,6 +27,15 @@ var element = DOM([
 ])
 ```
 
+Using a different React
+-----------------------
+
+Using React with addons or something? You can change which React this uses by calling `setReact`, thusly:
+
+```javascript
+var DOM = require('react-dom-wrapper').setReact(myReact);
+```
+
 Element spec
 ------------
 
