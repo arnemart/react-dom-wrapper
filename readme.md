@@ -48,7 +48,7 @@ An element is an array consisting of:
 Testing
 -------
 
-Yeah there should probably be some tests but you know
+There are test! [Buster](http://busterjs.org) is used. `npm test` runs the test, `npm run autotest` watches the files and runs tests automatically.
 
 License
 -------
