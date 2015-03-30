@@ -1,5 +1,4 @@
-react-dom-wrapper
-=================
+# react-dom-wrapper [![Build Status](https://travis-ci.org/arnemart/react-dom-wrapper.svg?branch=master)](https://travis-ci.org/arnemart/react-dom-wrapper)
 
 Convert an array of element data to react elements. Prettier than JSX, less verbose than using React.DOM directly. Inspired by (though not as pretty as) [Hiccup](https://github.com/weavejester/hiccup).
 
