@@ -1,7 +1,7 @@
 react-dom-wrapper
 =================
 
-Convert an array of element data to react elements
+Convert an array of element data to react elements. Prettier than JSX, less verbose than using React.DOM directly. Inspired by (though not as pretty as) [Hiccup](https://github.com/weavejester/hiccup).
 
 Installation
 ------------
