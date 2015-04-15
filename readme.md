@@ -31,14 +31,15 @@ var element = DOM([
 React.render(element, mountNode);
 ```
 
-Using a different React
+Using React with addons
 -----------------------
 
-Using React with addons or something? You can change which React this uses by calling `setReact`, thusly:
+Just do `var DOM = require('react-dom-wrapper/addons')`.
 
-```javascript
-var DOM = require('react-dom-wrapper').setReact(myReact);
-```
+Using a custom React
+-----------------------
+
+If you want to use a different version of React entirely, you can do `var DOM = require('react-dom-wrapper/react-dom-wrapper')(myCustomReact)`.
 
 Element spec
 ------------
