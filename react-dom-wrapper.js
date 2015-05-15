@@ -6,12 +6,23 @@ module.exports = function(React) {
   function isString(o) {
     return Object.prototype.toString.call(o) == '[object String]';
   }
+
   function isNumber(o) {
     return Object.prototype.toString.call(o) == '[object Number]';
   }
+
   function isObject(o) {
     return Object.prototype.toString.call(o) == '[object Object]';
   }
+
+  function clone(o) {
+    var res = {};
+    for (var i in o) {
+      res[i] = o[i];
+    }
+    return res;
+  }
+
   function recursiveFilterNulls(a) {
     return a.reduce(function(arr, e) {
       if (isArray(e)) {
@@ -25,6 +36,7 @@ module.exports = function(React) {
       return arr;
     }, []);
   }
+
   function DOM(tree) {
 
     if (isArray(tree[0])) {
@@ -59,7 +71,7 @@ module.exports = function(React) {
 
     // If we have props, get them, otherwise they're all children
     if (isObject(tree[1])) {
-      var newProps = tree[1];
+      var newProps = clone(tree[1]);
       if (props.className) {
         newProps.className = props.className + ' ' + (newProps.className || '');
       }
