@@ -1,6 +1,6 @@
 {
   "name": "react-dom-wrapper",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A (somewhat) helpful wrapper function for creating React elements",
   "repository": {
     "type": "git",
@@ -19,6 +19,9 @@
   ],
   "author": "Arne Martin Aurlien",
   "license": "MIT",
+  "peerDependencies": {
+    "react": "*"
+  },
   "devDependencies": {
     "react": "*",
     "buster": "^0.7.18"
