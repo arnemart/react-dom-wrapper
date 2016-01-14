@@ -42,7 +42,7 @@ module.exports = function(React) {
     if (isArray(tree[0])) {
       // Is this an array of elements? Convert them all to elements
       return tree.map(DOM);
-    } else if (tree._isReactElement || tree.$$typeof == Symbol.for('react.element') || isString(tree) || isNumber(tree)) {
+    } else if (React.isValidElement(tree) || isString(tree) || isNumber(tree)) {
       // Or is it maybe a React element? Or just a string, or maybe even a number? Return it.
       return tree;
     }

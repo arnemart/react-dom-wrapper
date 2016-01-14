@@ -1,6 +1,6 @@
 {
   "name": "react-dom-wrapper",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A (somewhat) helpful wrapper function for creating React elements",
   "repository": {
     "type": "git",
