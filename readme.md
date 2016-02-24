@@ -31,11 +31,6 @@ var element = DOM([
 React.render(element, mountNode);
 ```
 
-Using React with addons
------------------------
-
-Just do `var DOM = require('react-dom-wrapper/addons')`.
-
 Using a custom React
 -----------------------
 
