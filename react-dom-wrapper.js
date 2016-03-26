@@ -38,6 +38,10 @@ module.exports = function(React) {
   }
 
   function DOM(tree) {
+    // Special handling for Immutable.js
+    if (tree.toJS) {
+      tree = tree.toJS();
+    }
 
     if (isArray(tree[0])) {
       // Is this an array of elements? Convert them all to elements
